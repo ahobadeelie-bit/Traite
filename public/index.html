@@ -81,7 +81,7 @@
             const resultDiv = document.getElementById('result');
             
             try {
-                const response = await fetch('/process', {
+                const response = await fetch(window.location.origin + '/process', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -105,5 +105,4 @@
         }
     </script>
 </body>
-  </html>
-  
+</html>
